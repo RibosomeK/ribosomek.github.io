@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RibosomeK's Blog</title><link>https://ribosomek.github.io/</link><description>A personal blog</description><atom:link href="https://ribosomek.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:122797zhyktb@gmail.com"&gt;RibosomeK&lt;/a&gt; </copyright><lastBuildDate>Sun, 27 Aug 2023 08:59:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setup Github Pages and PAT Usage</title><link>https://ribosomek.github.io/posts/setup-github-pages-and-pat-usage/</link><dc:creator>RibosomeK</dc:creator><description>&lt;p&gt;Hi. This is RibosomeK. I want to document what I have learnt in my spare time. And this is the first day. In today I setup my Github Page that barely working, and I setup my Github Personal Access Token (PAT). I hope I can keep recording this at least once a week. But who knows.&lt;/p&gt;
+&lt;h3&gt;Setup Github Page&lt;/h3&gt;
+&lt;p&gt;This is the easiest part in today's working (I guess). Just follow the instruction from &lt;a href="https://pages.github.com/"&gt;Github&lt;/a&gt;. Basically speaking, it's just two step:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a Github repository that is named &lt;code&gt;username.github.io&lt;/code&gt;, where username is your Github username. Mine is RibosomeK for example and yes it's lower case. And also yes, it usually duplicated with the owner name (which I was a little bit confused when creating one).&lt;/li&gt;
+&lt;li&gt;Add a &lt;code&gt;index.html&lt;/code&gt; file on the Github website that has a nice GUI without doing that with command lines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you've done that. go to &lt;code&gt;username.github.io&lt;/code&gt;, and voila, you've set up your own Github Page!&lt;/p&gt;
+&lt;p&gt;Of cause, as the title implied, I used command line, and yes, git is hard.&lt;/p&gt;
+&lt;h3&gt;Simple Usage of PAT&lt;/h3&gt;
+&lt;p&gt;PAT as above, is Personal Access Token that provided by Github to remotely operate your Github account, like git push. When I tried to push the index.html file using the command &lt;code&gt;git push&lt;/code&gt;, I entered my username and Github password as it promoted. But an error happened, as follow. &lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;remote&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Support&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;authentication&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;was&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;removed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;August&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2021&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;remote&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Please&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;see&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="n"&gt;docs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;com&lt;/span&gt;&lt;span class="sr"&gt;/en/get-started/getting-started-with-git/&lt;/span&gt;&lt;span class="n"&gt;about&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;remote&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repositories&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;cloning&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;urls&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;information&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;currently&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;recommended&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;modes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;authentication&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So I open the link, found out that PAT is recommended to use in this situation.&lt;/p&gt;
+&lt;h4&gt;Create a PAT&lt;/h4&gt;
+&lt;p&gt;As the link suggest, I clicked on my Github avatar, clicked on &lt;code&gt;Settings&lt;/code&gt;, find the &lt;code&gt;Developer settings&lt;/code&gt; which at the bottom of the left panel. Again, find &lt;code&gt;Personal access tokens&lt;/code&gt; session. Here I chose the &lt;code&gt;Token (classic)&lt;/code&gt;. Right on the corner, you can see the &lt;code&gt;Generate new token&lt;/code&gt; button. That's the one.&lt;/p&gt;
+&lt;p&gt;Because I also have Github app on my phone, so it gave me a verification code that I need to enter on my phone. After the authentication, you can customize your PAT, including a short description indicating what is use for, when the token will expire, how much it can access the scope.&lt;/p&gt;
+&lt;p&gt;I create a PAT note it as "git learning", that will expire in 30 days, and select all the scope (which seems not necessary cause I only need something like the push command ?).&lt;/p&gt;
+&lt;p&gt;If everything goes well, you will get the token that starts with &lt;code&gt;ghp_&lt;/code&gt; follow by some random characters.&lt;/p&gt;
+&lt;h4&gt;Store PAT with GCM&lt;/h4&gt;
+&lt;p&gt;Now go back to the &lt;code&gt;git push&lt;/code&gt; commend, use the PAT as password, can successfully execute the command. But it would be impractical to enter the PAT manually every time you push commit to the repository.  So I google with the keywords &lt;code&gt;personal access token automatically&lt;/code&gt; and I found &lt;a href="https://stackoverflow.com/questions/46645843/where-to-store-my-git-personal-access-token"&gt;a post on Stack Overflow&lt;/a&gt; suggested that you should use &lt;a href="https://github.com/git-ecosystem/git-credential-manager"&gt;Git Credential Manager (GCM)&lt;/a&gt; to store PATs.&lt;/p&gt;
+&lt;p&gt;After trying for multiple time, I think I finally make it on my machine (Ubuntu 22.04.3 wsl2), and here is how.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;code&gt;.deb&lt;/code&gt; package from latest release on Github&lt;/li&gt;
+&lt;li&gt;Install the package with &lt;code&gt;sudo dpkg -i the-gcm-package.deb&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;Install &lt;code&gt;pass&lt;/code&gt; package with &lt;code&gt;sudo apt install pass&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Generate GPG key pair with &lt;code&gt;gpg --gen-key&lt;/code&gt; and follow the prompts&lt;/li&gt;
+&lt;li&gt;Set &lt;code&gt;GPG_TTY&lt;/code&gt; environment with &lt;code&gt;export GPG_TTY=$(tty)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Initialize &lt;code&gt;pass&lt;/code&gt; utility with &lt;code&gt;pass init &amp;lt;gpg-id&amp;gt;&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;Set git config with &lt;code&gt;git config --global credential.credentialStore gpg&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After all these steps, if I remember correctly, when you use &lt;code&gt;git push&lt;/code&gt; for the first time. It will ask you to enter the passphrase of your GPG key pair. The second time you push your commit, it won't ask for anything, which is pretty convenient.&lt;/p&gt;
+&lt;h3&gt;Git Command I've Learnt along the Way&lt;/h3&gt;
+&lt;p&gt;Before you push to the repository, you need to add and commit.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"file-you-want-to-add"&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"the commit comment"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to add all the files, you use.&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;--all
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configs that we set can be list by&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;--list
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To remove configs that we set&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;--unset&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"name-of-the-config"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Afterthought&lt;/h3&gt;
+&lt;p&gt;I spend like an afternoon to figure out how to use the GCM and I have to say this really hard for me to know what is going on. When I look the Stack Overflow and GCM docs, I was struggling. But eventually it works. I'm quite glad.&lt;/p&gt;</description><guid>https://ribosomek.github.io/posts/setup-github-pages-and-pat-usage/</guid><pubDate>Sun, 27 Aug 2023 08:58:46 GMT</pubDate></item></channel></rss>

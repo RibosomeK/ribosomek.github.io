@@ -1,0 +1,4 @@
+Sitemap: https://ribosomek.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: ribosomek.github.io
